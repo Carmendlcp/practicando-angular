@@ -1,0 +1,32 @@
+<ul>
+  @for (user of users; track user.name) {
+    <li>
+      <h1>{{user.name}}</h1>
+      <p> {{user.age}}</p>
+      @if (user.age <=24) {
+        <div>
+        <p>"Estás hecho un toro"</p>
+      </div>
+      } @else {
+        <div>
+        <p>"Aún eres un ternero"</p>
+      </div>
+      }
+      <p> {{user.gender}}</p>
+      @if (user.gender === "Female") {
+        <div>
+        <p>"Mujer"</p>
+      </div>
+      } @else {
+        <div>
+        <p>"Hombre"</p>
+      </div>
+      }
+      <img src="{{user.img}}">
+     </li>
+  }
+</ul>
+
+
+
+

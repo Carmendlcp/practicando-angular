@@ -1,11 +1,15 @@
+import { ContadorMayorMenorEdadComponent } from './contador-mayor-menor-edad/contador-mayor-menor-edad.component';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './header-uno/header.component';
+import { ContadorComponent } from './contador/contador.component';
+import { PersonajesComponent } from './personajes/personajes.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [PersonajesComponent ,ContadorMayorMenorEdadComponent, CommonModule, RouterOutlet, HeaderComponent, ContadorComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
