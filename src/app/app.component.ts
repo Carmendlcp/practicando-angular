@@ -5,11 +5,12 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header-uno/header.component';
 import { ContadorComponent } from './contador/contador.component';
 import { PersonajesComponent } from './personajes/personajes.component';
+import { InputsComponent } from './inputs/inputs.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [PersonajesComponent ,ContadorMayorMenorEdadComponent, CommonModule, RouterOutlet, HeaderComponent, ContadorComponent],
+  imports: [PersonajesComponent ,ContadorMayorMenorEdadComponent, CommonModule, RouterOutlet, HeaderComponent, ContadorComponent, InputsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

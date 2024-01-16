@@ -1,0 +1,22 @@
+
+  @for (item of tasks; track item.task) {
+    <div>
+      <h1>{{item.task}}</h1>
+      <p> Is done? {{item.isDone}}</p>
+      <p> Priority: {{item.priority}} </p>
+      <button (click)= "deleteTask($index)">Delete task</button>
+    </div>
+    }
+
+    <button (click)="sortPriority()">Sort by priority</button>
+<br>
+    <button (click)="deleteLastTask()">Delete last task</button>
+
+
+
+
+
+
+
+
+
